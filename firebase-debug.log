@@ -1,0 +1,811 @@
+[debug] [2023-01-12T04:13:59.256Z] ----------------------------------------------------------------------
+[debug] [2023-01-12T04:13:59.258Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ACER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-01-12T04:13:59.259Z] CLI Version:   11.20.0
+[debug] [2023-01-12T04:13:59.259Z] Platform:      win32
+[debug] [2023-01-12T04:13:59.259Z] Node Version:  v18.13.0
+[debug] [2023-01-12T04:13:59.260Z] Time:          Thu Jan 12 2023 07:13:59 GMT+0300 (GMT+03:00)
+[debug] [2023-01-12T04:13:59.261Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-12T04:13:59.270Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-12T04:13:59.270Z] > authorizing via signed-in user (mutasem.990@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\ACER\Desktop\motasem\fullapp\motasem\bbtt (1)\bbtt
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-01-12T04:14:05.116Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-01-12T04:14:05.792Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-01-12T04:14:05.793Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project mykalori-app (mykalori app) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2023-01-12T04:14:08.200Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-01-12T04:14:08.200Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/mykalori-app
+[debug] [2023-01-12T04:14:09.405Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/firebasedatabase.googleapis.com 200
+[debug] [2023-01-12T04:14:09.405Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2023-01-12T04:14:09.407Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/mykalori-app/locations/-/instances/mykalori-app-default-rtdb [none]
+[debug] [2023-01-12T04:14:10.385Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/mykalori-app/locations/-/instances/mykalori-app-default-rtdb 200
+[debug] [2023-01-12T04:14:10.386Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/mykalori-app/locations/-/instances/mykalori-app-default-rtdb {"name":"projects/416271199834/locations/asia-southeast1/instances/mykalori-app-default-rtdb","project":"projects/416271199834","databaseUrl":"https://mykalori-app-default-rtdb.asia-southeast1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2023-01-12T04:14:26.622Z] >>> [apiv2][query] GET https://mykalori-app-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [none]
+[debug] [2023-01-12T04:14:27.520Z] <<< [apiv2][status] GET https://mykalori-app-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json 200
+[debug] [2023-01-12T04:14:27.521Z] <<< [apiv2][body] GET https://mykalori-app-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [stream]
+[info] +  Database Rules for mykalori-app-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2023-01-12T04:14:27.525Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/firestore.googleapis.com [none]
+[debug] [2023-01-12T04:14:27.525Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/firestore.googleapis.com x-goog-quota-user=projects/mykalori-app
+[debug] [2023-01-12T04:14:28.623Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/firestore.googleapis.com 200
+[debug] [2023-01-12T04:14:28.624Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/firestore.googleapis.com [omitted]
+[debug] [2023-01-12T04:14:28.624Z] >>> [apiv2][query] GET https://appengine.googleapis.com/v1/apps/mykalori-app [none]
+[debug] [2023-01-12T04:14:30.680Z] <<< [apiv2][status] GET https://appengine.googleapis.com/v1/apps/mykalori-app 200
+[debug] [2023-01-12T04:14:30.681Z] <<< [apiv2][body] GET https://appengine.googleapis.com/v1/apps/mykalori-app {"name":"apps/mykalori-app","id":"mykalori-app","authDomain":"gmail.com","locationId":"asia-southeast1","codeBucket":"staging.mykalori-app.appspot.com","servingStatus":"SERVING","defaultHostname":"mykalori-app.as.r.appspot.com","defaultBucket":"mykalori-app.appspot.com","serviceAccount":"mykalori-app@appspot.gserviceaccount.com","gcrDomain":"asia.gcr.io","databaseType":"CLOUD_FIRESTORE","featureSettings":{"splitHealthChecks":true,"useContainerOptimizedOs":true}}
+[debug] [2023-01-12T04:14:30.681Z] database_type: CLOUD_FIRESTORE
+[debug] [2023-01-12T04:14:30.681Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-12T04:14:30.682Z] > authorizing via signed-in user (mutasem.990@gmail.com)
+[debug] [2023-01-12T04:14:30.682Z] [iam] checking project mykalori-app for permissions ["firebase.projects.get"]
+[debug] [2023-01-12T04:14:30.683Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/mykalori-app:testIamPermissions [none]
+[debug] [2023-01-12T04:14:30.683Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/mykalori-app:testIamPermissions x-goog-quota-user=projects/mykalori-app
+[debug] [2023-01-12T04:14:30.683Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mykalori-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-01-12T04:14:31.703Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/mykalori-app:testIamPermissions 200
+[debug] [2023-01-12T04:14:31.704Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mykalori-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-01-12T04:14:39.315Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/mykalori-app/releases pageSize=10&pageToken=
+[debug] [2023-01-12T04:14:40.259Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/mykalori-app/releases 200
+[debug] [2023-01-12T04:14:40.259Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/mykalori-app/releases {"releases":[{"name":"projects/mykalori-app/releases/cloud.firestore","rulesetName":"projects/mykalori-app/rulesets/87f9fb9a-e0fc-4fef-970c-b7e8fb8a6222","createTime":"2023-01-12T03:49:34.649469Z","updateTime":"2023-01-12T03:49:34.649469Z"},{"name":"projects/mykalori-app/releases/firebase.storage/mykalori-app.appspot.com","rulesetName":"projects/mykalori-app/rulesets/01b4d7fc-4924-46b3-8786-ae9f2914cf99","createTime":"2023-01-12T04:12:26.564626Z","updateTime":"2023-01-12T04:12:26.564626Z"}]}
+[debug] [2023-01-12T04:14:40.260Z] Found ruleset: projects/mykalori-app/rulesets/87f9fb9a-e0fc-4fef-970c-b7e8fb8a6222
+[debug] [2023-01-12T04:14:40.260Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/mykalori-app/rulesets/87f9fb9a-e0fc-4fef-970c-b7e8fb8a6222 [none]
+[debug] [2023-01-12T04:14:41.110Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/mykalori-app/rulesets/87f9fb9a-e0fc-4fef-970c-b7e8fb8a6222 200
+[debug] [2023-01-12T04:14:41.111Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/mykalori-app/rulesets/87f9fb9a-e0fc-4fef-970c-b7e8fb8a6222 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-01-12T04:14:44.289Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/mykalori-app/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2023-01-12T04:14:44.291Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/mykalori-app/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2023-01-12T04:14:46.514Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/mykalori-app/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2023-01-12T04:14:46.514Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/mykalori-app/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2023-01-12T04:14:46.529Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/mykalori-app/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2023-01-12T04:14:46.529Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/mykalori-app/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/mykalori-app/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Functions Setup
+[debug] [2023-01-12T04:14:46.532Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-12T04:14:46.532Z] > authorizing via signed-in user (mutasem.990@gmail.com)
+[debug] [2023-01-12T04:14:46.533Z] [iam] checking project mykalori-app for permissions ["firebase.projects.get"]
+[debug] [2023-01-12T04:14:46.533Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/mykalori-app:testIamPermissions [none]
+[debug] [2023-01-12T04:14:46.533Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/mykalori-app:testIamPermissions x-goog-quota-user=projects/mykalori-app
+[debug] [2023-01-12T04:14:46.533Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mykalori-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-01-12T04:14:47.477Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/mykalori-app:testIamPermissions 200
+[debug] [2023-01-12T04:14:47.477Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mykalori-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-01-12T04:14:47.478Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-01-12T04:14:47.478Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/mykalori-app
+[debug] [2023-01-12T04:14:47.482Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-01-12T04:14:47.482Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/mykalori-app
+[debug] [2023-01-12T04:14:48.607Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/runtimeconfig.googleapis.com 200
+[debug] [2023-01-12T04:14:48.607Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-01-12T04:14:48.628Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/cloudfunctions.googleapis.com 200
+[debug] [2023-01-12T04:14:48.628Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2023-01-12T04:14:48.629Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2023-01-12T04:14:48.629Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/mykalori-app
+[debug] [2023-01-12T04:14:50.609Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2023-01-12T04:14:50.610Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2023-01-12T04:15:00.616Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-01-12T04:15:00.616Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/mykalori-app
+[debug] [2023-01-12T04:15:01.744Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/cloudfunctions.googleapis.com 200
+[debug] [2023-01-12T04:15:01.744Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-01-12T04:16:29.741Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-01-12T04:16:29.936Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-01-12T04:16:29.937Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.15.0","browserURL":"https://www.gstatic.com/firebasejs/9.15.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.15.0/firebase.tgz"},"live":{"version":"9.15","browserURL":"https://www.gstatic.com/firebasejs/live/9.15/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.15/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.15.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.15.0/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.15.0/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.15.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.15.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.15.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.15.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.15.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.15.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.15.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\ACER\Desktop\motasem\fullapp\motasem\bbtt (1)\bbtt is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=780512270&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-01-12T04:18:58.650Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-01-12T04:18:58.651Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-01-12T04:18:59.113Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-01-12T04:18:59.113Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-01-12T04:18:59.122Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-01-12T04:18:59.691Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-01-12T04:18:59.691Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"dx21x","id":84685353,"node_id":"MDQ6VXNlcjg0Njg1MzUz","avatar_url":"https://avatars.githubusercontent.com/u/84685353?v=4","gravatar_id":"","url":"https://api.github.com/users/dx21x","html_url":"https://github.com/dx21x","followers_url":"https://api.github.com/users/dx21x/followers","following_url":"https://api.github.com/users/dx21x/following{/other_user}","gists_url":"https://api.github.com/users/dx21x/gists{/gist_id}","starred_url":"https://api.github.com/users/dx21x/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/dx21x/subscriptions","organizations_url":"https://api.github.com/users/dx21x/orgs","repos_url":"https://api.github.com/users/dx21x/repos","events_url":"https://api.github.com/users/dx21x/events{/privacy}","received_events_url":"https://api.github.com/users/dx21x/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":1,"public_gists":0,"followers":0,"following":0,"created_at":"2021-05-23T20:51:59Z","updated_at":"2023-01-12T04:17:50Z","private_gists":0,"total_private_repos":1,"owned_private_repos":1,"disk_usage":2,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as dx21x 
+[info] 
+[debug] [2023-01-12T04:19:05.976Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:19:06.299Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:19:06.299Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:19:10.435Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:19:10.780Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:19:10.780Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:19:24.704Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:19:25.030Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:19:25.031Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:19:25.143Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:19:25.369Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:19:25.474Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:19:25.474Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:19:25.589Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:19:25.743Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:19:25.743Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:19:25.919Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:19:25.919Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:19:46.484Z] >>> [apiv2][query] GET https://api.github.com/repos/Y/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:19:46.847Z] <<< [apiv2][status] GET https://api.github.com/repos/Y/actions/secrets/public-key 404
+[debug] [2023-01-12T04:19:46.847Z] <<< [apiv2][body] GET https://api.github.com/repos/Y/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:19:47.611Z] >>> [apiv2][query] GET https://api.github.com/repos/Y/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:19:47.949Z] <<< [apiv2][status] GET https://api.github.com/repos/Y/actions/secrets/public-key 404
+[debug] [2023-01-12T04:19:47.949Z] <<< [apiv2][body] GET https://api.github.com/repos/Y/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:19:48.720Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:19:49.020Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:19:49.051Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:19:49.051Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:19:49.352Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:19:49.352Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:19:49.614Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:19:49.949Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:19:49.949Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:19:50.368Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:19:50.704Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:19:50.704Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:19:57.695Z] >>> [apiv2][query] GET https://api.github.com/repos/user/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:19:58.030Z] <<< [apiv2][status] GET https://api.github.com/repos/user/actions/secrets/public-key 404
+[debug] [2023-01-12T04:19:58.030Z] <<< [apiv2][body] GET https://api.github.com/repos/user/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:19:59.225Z] >>> [apiv2][query] GET https://api.github.com/repos/user/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:19:59.566Z] <<< [apiv2][status] GET https://api.github.com/repos/user/actions/secrets/public-key 404
+[debug] [2023-01-12T04:19:59.566Z] <<< [apiv2][body] GET https://api.github.com/repos/user/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:21:18.814Z] >>> [apiv2][query] GET https://api.github.com/repos/motasem/my-project/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:21:19.168Z] <<< [apiv2][status] GET https://api.github.com/repos/motasem/my-project/actions/secrets/public-key 404
+[debug] [2023-01-12T04:21:19.168Z] <<< [apiv2][body] GET https://api.github.com/repos/motasem/my-project/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:21:20.889Z] >>> [apiv2][query] GET https://api.github.com/repos/motasem/my-project/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:21:21.123Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:21:21.246Z] <<< [apiv2][status] GET https://api.github.com/repos/motasem/my-project/actions/secrets/public-key 404
+[debug] [2023-01-12T04:21:21.246Z] <<< [apiv2][body] GET https://api.github.com/repos/motasem/my-project/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:21:21.302Z] >>> [apiv2][query] GET https://api.github.com/repos/motasem/my-project/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:21:21.459Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:21:21.459Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:21:21.473Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:21:21.646Z] <<< [apiv2][status] GET https://api.github.com/repos/motasem/my-project/actions/secrets/public-key 404
+[debug] [2023-01-12T04:21:21.646Z] <<< [apiv2][body] GET https://api.github.com/repos/motasem/my-project/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:21:21.662Z] >>> [apiv2][query] GET https://api.github.com/repos/motasem/my-project/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:21:21.809Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:21:21.809Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:21:21.860Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:21:22.013Z] <<< [apiv2][status] GET https://api.github.com/repos/motasem/my-project/actions/secrets/public-key 404
+[debug] [2023-01-12T04:21:22.013Z] <<< [apiv2][body] GET https://api.github.com/repos/motasem/my-project/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:21:22.189Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:21:22.189Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:21:22.617Z] >>> [apiv2][query] GET https://api.github.com/repos/motasem/my-project/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:21:22.933Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:21:22.944Z] <<< [apiv2][status] GET https://api.github.com/repos/motasem/my-project/actions/secrets/public-key 404
+[debug] [2023-01-12T04:21:22.944Z] <<< [apiv2][body] GET https://api.github.com/repos/motasem/my-project/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:21:23.137Z] >>> [apiv2][query] GET https://api.github.com/repos/motasem/my-project/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:21:23.271Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:21:23.271Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:21:23.342Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:21:23.502Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:21:23.561Z] <<< [apiv2][status] GET https://api.github.com/repos/motasem/my-project/actions/secrets/public-key 404
+[debug] [2023-01-12T04:21:23.561Z] <<< [apiv2][body] GET https://api.github.com/repos/motasem/my-project/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:21:23.660Z] >>> [apiv2][query] GET https://api.github.com/repos/motasem/my-project/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:21:23.678Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:21:23.679Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:21:23.818Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:21:23.818Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:21:23.820Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:21:23.985Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:21:24.006Z] <<< [apiv2][status] GET https://api.github.com/repos/motasem/my-project/actions/secrets/public-key 404
+[debug] [2023-01-12T04:21:24.006Z] <<< [apiv2][body] GET https://api.github.com/repos/motasem/my-project/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:21:24.153Z] >>> [apiv2][query] GET https://api.github.com/repos/motasem/my-project/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:21:24.214Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:21:24.214Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:21:24.286Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:21:24.392Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:21:24.393Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:21:24.434Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:21:24.571Z] <<< [apiv2][status] GET https://api.github.com/repos/motasem/my-project/actions/secrets/public-key 404
+[debug] [2023-01-12T04:21:24.571Z] <<< [apiv2][body] GET https://api.github.com/repos/motasem/my-project/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:21:24.590Z] >>> [apiv2][query] GET https://api.github.com/repos/motasem/my-project/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:21:24.619Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:21:24.619Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:21:24.741Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:21:24.786Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:21:24.786Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:21:24.895Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:21:24.927Z] <<< [apiv2][status] GET https://api.github.com/repos/motasem/my-project/actions/secrets/public-key 404
+[debug] [2023-01-12T04:21:24.927Z] <<< [apiv2][body] GET https://api.github.com/repos/motasem/my-project/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:21:25.050Z] >>> [apiv2][query] GET https://api.github.com/repos/motasem/my-project/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:21:25.066Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:21:25.066Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:21:25.208Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:21:25.216Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:21:25.216Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:21:25.350Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:21:25.381Z] <<< [apiv2][status] GET https://api.github.com/repos/motasem/my-project/actions/secrets/public-key 404
+[debug] [2023-01-12T04:21:25.381Z] <<< [apiv2][body] GET https://api.github.com/repos/motasem/my-project/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:21:25.533Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:21:25.533Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:21:25.548Z] >>> [apiv2][query] GET https://api.github.com/repos/motasem/my-project/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:21:25.679Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:21:25.679Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:21:25.894Z] <<< [apiv2][status] GET https://api.github.com/repos/motasem/my-project/actions/secrets/public-key 404
+[debug] [2023-01-12T04:21:25.894Z] <<< [apiv2][body] GET https://api.github.com/repos/motasem/my-project/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:23:14.416Z] >>> [apiv2][query] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:23:14.776Z] <<< [apiv2][status] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key 404
+[debug] [2023-01-12T04:23:14.776Z] <<< [apiv2][body] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:23:15.863Z] >>> [apiv2][query] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:23:16.072Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:23:16.213Z] <<< [apiv2][status] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key 404
+[debug] [2023-01-12T04:23:16.213Z] <<< [apiv2][body] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:23:16.249Z] >>> [apiv2][query] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:23:16.405Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:23:16.405Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:23:16.435Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:23:16.590Z] <<< [apiv2][status] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key 404
+[debug] [2023-01-12T04:23:16.590Z] <<< [apiv2][body] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:23:16.591Z] >>> [apiv2][query] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:23:16.768Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:23:16.768Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:23:16.922Z] <<< [apiv2][status] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key 404
+[debug] [2023-01-12T04:23:16.922Z] <<< [apiv2][body] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:23:17.318Z] >>> [apiv2][query] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:23:17.662Z] <<< [apiv2][status] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key 404
+[debug] [2023-01-12T04:23:17.662Z] <<< [apiv2][body] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:23:17.819Z] >>> [apiv2][query] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:23:18.077Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:23:18.162Z] <<< [apiv2][status] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key 404
+[debug] [2023-01-12T04:23:18.162Z] <<< [apiv2][body] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:23:18.279Z] >>> [apiv2][query] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:23:18.401Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:23:18.401Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:23:18.439Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:23:18.607Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:23:18.632Z] <<< [apiv2][status] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key 404
+[debug] [2023-01-12T04:23:18.633Z] <<< [apiv2][body] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:23:18.761Z] >>> [apiv2][query] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:23:18.781Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:23:18.782Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:23:18.909Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:23:18.940Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:23:18.940Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:23:19.082Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:23:19.156Z] <<< [apiv2][status] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key 404
+[debug] [2023-01-12T04:23:19.156Z] <<< [apiv2][body] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:23:19.251Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:23:19.251Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:23:19.256Z] >>> [apiv2][query] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:23:19.413Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:23:19.413Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:23:19.424Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:23:19.606Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:23:19.608Z] <<< [apiv2][status] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key 404
+[debug] [2023-01-12T04:23:19.608Z] <<< [apiv2][body] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:23:19.757Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:23:19.758Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:23:19.934Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:23:19.934Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:23:34.557Z] >>> [apiv2][query] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:23:34.744Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:23:34.897Z] <<< [apiv2][status] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key 404
+[debug] [2023-01-12T04:23:34.898Z] <<< [apiv2][body] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:23:34.933Z] >>> [apiv2][query] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:23:35.071Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:23:35.071Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:23:35.103Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:23:35.275Z] <<< [apiv2][status] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key 404
+[debug] [2023-01-12T04:23:35.275Z] <<< [apiv2][body] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:23:35.423Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:23:35.424Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:23:35.853Z] >>> [apiv2][query] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:23:36.206Z] <<< [apiv2][status] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key 404
+[debug] [2023-01-12T04:23:36.206Z] <<< [apiv2][body] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:23:36.381Z] >>> [apiv2][query] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:23:36.718Z] <<< [apiv2][status] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key 404
+[debug] [2023-01-12T04:23:36.718Z] <<< [apiv2][body] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:23:37.508Z] >>> [apiv2][query] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:23:37.859Z] <<< [apiv2][status] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key 404
+[debug] [2023-01-12T04:23:37.859Z] <<< [apiv2][body] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:23:41.435Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:23:41.761Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:23:41.761Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:23:42.129Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:23:42.461Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:23:42.461Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:23:42.816Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:23:43.141Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:23:43.141Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:23:43.504Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:23:43.837Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:23:43.837Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:23:44.176Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:23:44.504Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:23:44.504Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:23:44.848Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:23:45.174Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:23:45.174Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:23:45.599Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:23:45.928Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:23:45.928Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:24:04.497Z] ----------------------------------------------------------------------
+[debug] [2023-01-12T04:24:04.500Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ACER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-01-12T04:24:04.501Z] CLI Version:   11.20.0
+[debug] [2023-01-12T04:24:04.502Z] Platform:      win32
+[debug] [2023-01-12T04:24:04.502Z] Node Version:  v18.13.0
+[debug] [2023-01-12T04:24:04.503Z] Time:          Thu Jan 12 2023 07:24:04 GMT+0300 (GMT+03:00)
+[debug] [2023-01-12T04:24:04.504Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-12T04:24:04.519Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-12T04:24:04.520Z] > authorizing via signed-in user (mutasem.990@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\ACER\Desktop\motasem\fullapp\motasem\bbtt (1)\bbtt
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-01-12T04:24:11.069Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-01-12T04:24:11.711Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-01-12T04:24:11.711Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project mykalori-app (mykalori app) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2023-01-12T04:24:13.862Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-01-12T04:24:13.863Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/mykalori-app
+[debug] [2023-01-12T04:24:15.053Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/firebasedatabase.googleapis.com 200
+[debug] [2023-01-12T04:24:15.053Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2023-01-12T04:24:15.054Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/mykalori-app/locations/-/instances/mykalori-app-default-rtdb [none]
+[debug] [2023-01-12T04:24:15.551Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/mykalori-app/locations/-/instances/mykalori-app-default-rtdb 200
+[debug] [2023-01-12T04:24:15.551Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/mykalori-app/locations/-/instances/mykalori-app-default-rtdb {"name":"projects/416271199834/locations/asia-southeast1/instances/mykalori-app-default-rtdb","project":"projects/416271199834","databaseUrl":"https://mykalori-app-default-rtdb.asia-southeast1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2023-01-12T04:24:19.701Z] >>> [apiv2][query] GET https://mykalori-app-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [none]
+[debug] [2023-01-12T04:24:20.557Z] <<< [apiv2][status] GET https://mykalori-app-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json 200
+[debug] [2023-01-12T04:24:20.558Z] <<< [apiv2][body] GET https://mykalori-app-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [stream]
+[info] +  Database Rules for mykalori-app-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2023-01-12T04:24:20.561Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/firestore.googleapis.com [none]
+[debug] [2023-01-12T04:24:20.562Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/firestore.googleapis.com x-goog-quota-user=projects/mykalori-app
+[debug] [2023-01-12T04:24:21.730Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/firestore.googleapis.com 200
+[debug] [2023-01-12T04:24:21.731Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/firestore.googleapis.com [omitted]
+[debug] [2023-01-12T04:24:21.732Z] >>> [apiv2][query] GET https://appengine.googleapis.com/v1/apps/mykalori-app [none]
+[debug] [2023-01-12T04:24:22.571Z] <<< [apiv2][status] GET https://appengine.googleapis.com/v1/apps/mykalori-app 200
+[debug] [2023-01-12T04:24:22.571Z] <<< [apiv2][body] GET https://appengine.googleapis.com/v1/apps/mykalori-app {"name":"apps/mykalori-app","id":"mykalori-app","authDomain":"gmail.com","locationId":"asia-southeast1","codeBucket":"staging.mykalori-app.appspot.com","servingStatus":"SERVING","defaultHostname":"mykalori-app.as.r.appspot.com","defaultBucket":"mykalori-app.appspot.com","serviceAccount":"mykalori-app@appspot.gserviceaccount.com","gcrDomain":"asia.gcr.io","databaseType":"CLOUD_FIRESTORE","featureSettings":{"splitHealthChecks":true,"useContainerOptimizedOs":true}}
+[debug] [2023-01-12T04:24:22.572Z] database_type: CLOUD_FIRESTORE
+[debug] [2023-01-12T04:24:22.573Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-12T04:24:22.573Z] > authorizing via signed-in user (mutasem.990@gmail.com)
+[debug] [2023-01-12T04:24:22.573Z] [iam] checking project mykalori-app for permissions ["firebase.projects.get"]
+[debug] [2023-01-12T04:24:22.574Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/mykalori-app:testIamPermissions [none]
+[debug] [2023-01-12T04:24:22.574Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/mykalori-app:testIamPermissions x-goog-quota-user=projects/mykalori-app
+[debug] [2023-01-12T04:24:22.574Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mykalori-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-01-12T04:24:23.587Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/mykalori-app:testIamPermissions 200
+[debug] [2023-01-12T04:24:23.587Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mykalori-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-01-12T04:24:26.701Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/mykalori-app/releases pageSize=10&pageToken=
+[debug] [2023-01-12T04:24:27.195Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/mykalori-app/releases 200
+[debug] [2023-01-12T04:24:27.195Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/mykalori-app/releases {"releases":[{"name":"projects/mykalori-app/releases/cloud.firestore","rulesetName":"projects/mykalori-app/rulesets/87f9fb9a-e0fc-4fef-970c-b7e8fb8a6222","createTime":"2023-01-12T03:49:34.649469Z","updateTime":"2023-01-12T03:49:34.649469Z"},{"name":"projects/mykalori-app/releases/firebase.storage/mykalori-app.appspot.com","rulesetName":"projects/mykalori-app/rulesets/01b4d7fc-4924-46b3-8786-ae9f2914cf99","createTime":"2023-01-12T04:12:26.564626Z","updateTime":"2023-01-12T04:12:26.564626Z"}]}
+[debug] [2023-01-12T04:24:27.196Z] Found ruleset: projects/mykalori-app/rulesets/87f9fb9a-e0fc-4fef-970c-b7e8fb8a6222
+[debug] [2023-01-12T04:24:27.196Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/mykalori-app/rulesets/87f9fb9a-e0fc-4fef-970c-b7e8fb8a6222 [none]
+[debug] [2023-01-12T04:24:28.023Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/mykalori-app/rulesets/87f9fb9a-e0fc-4fef-970c-b7e8fb8a6222 200
+[debug] [2023-01-12T04:24:28.023Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/mykalori-app/rulesets/87f9fb9a-e0fc-4fef-970c-b7e8fb8a6222 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-01-12T04:24:33.917Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/mykalori-app/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2023-01-12T04:24:33.920Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/mykalori-app/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2023-01-12T04:24:36.135Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/mykalori-app/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2023-01-12T04:24:36.136Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/mykalori-app/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/mykalori-app/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[debug] [2023-01-12T04:24:36.136Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/mykalori-app/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2023-01-12T04:24:36.136Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/mykalori-app/databases/(default)/collectionGroups/-/indexes {}
+[info] 
+=== Functions Setup
+[debug] [2023-01-12T04:24:36.138Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-12T04:24:36.138Z] > authorizing via signed-in user (mutasem.990@gmail.com)
+[debug] [2023-01-12T04:24:36.139Z] [iam] checking project mykalori-app for permissions ["firebase.projects.get"]
+[debug] [2023-01-12T04:24:36.139Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/mykalori-app:testIamPermissions [none]
+[debug] [2023-01-12T04:24:36.139Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/mykalori-app:testIamPermissions x-goog-quota-user=projects/mykalori-app
+[debug] [2023-01-12T04:24:36.139Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mykalori-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-01-12T04:24:37.060Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/mykalori-app:testIamPermissions 200
+[debug] [2023-01-12T04:24:37.060Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mykalori-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-01-12T04:24:37.060Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-01-12T04:24:37.061Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/mykalori-app
+[debug] [2023-01-12T04:24:37.063Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-01-12T04:24:37.063Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/mykalori-app
+[debug] [2023-01-12T04:24:38.149Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/runtimeconfig.googleapis.com 200
+[debug] [2023-01-12T04:24:38.149Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-01-12T04:24:38.154Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/cloudfunctions.googleapis.com 200
+[debug] [2023-01-12T04:24:38.154Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/cloudfunctions.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default
+
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[error] Invalid codebase name. Codebase must be less than 64 characters and can contain only lowercase letters, numeric characters, underscores, and dashes.
+[info] +  Wrote motasemapp_web/package.json 
+[info] +  Wrote motasemapp_web/.eslintrc.js 
+[info] +  Wrote motasemapp_web/index.js 
+[info] +  Wrote motasemapp_web/.gitignore 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-01-12T04:27:58.728Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-01-12T04:27:58.954Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-01-12T04:27:58.954Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.15.0","browserURL":"https://www.gstatic.com/firebasejs/9.15.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.15.0/firebase.tgz"},"live":{"version":"9.15","browserURL":"https://www.gstatic.com/firebasejs/live/9.15/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.15/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.15.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.15.0/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.15.0/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.15.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.15.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.15.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.15.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.15.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.15.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.15.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\ACER\Desktop\motasem\fullapp\motasem\bbtt (1)\bbtt is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=289307375&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-01-12T04:28:03.947Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-01-12T04:28:03.947Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-01-12T04:28:04.359Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-01-12T04:28:04.359Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-01-12T04:28:04.367Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-01-12T04:28:04.769Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-01-12T04:28:04.770Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"dx21x","id":84685353,"node_id":"MDQ6VXNlcjg0Njg1MzUz","avatar_url":"https://avatars.githubusercontent.com/u/84685353?v=4","gravatar_id":"","url":"https://api.github.com/users/dx21x","html_url":"https://github.com/dx21x","followers_url":"https://api.github.com/users/dx21x/followers","following_url":"https://api.github.com/users/dx21x/following{/other_user}","gists_url":"https://api.github.com/users/dx21x/gists{/gist_id}","starred_url":"https://api.github.com/users/dx21x/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/dx21x/subscriptions","organizations_url":"https://api.github.com/users/dx21x/orgs","repos_url":"https://api.github.com/users/dx21x/repos","events_url":"https://api.github.com/users/dx21x/events{/privacy}","received_events_url":"https://api.github.com/users/dx21x/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":1,"public_gists":0,"followers":0,"following":0,"created_at":"2021-05-23T20:51:59Z","updated_at":"2023-01-12T04:17:50Z","private_gists":0,"total_private_repos":1,"owned_private_repos":1,"disk_usage":2,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as dx21x 
+[info] 
+[debug] [2023-01-12T04:28:11.808Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:28:12.140Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:28:12.140Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:28:41.680Z] >>> [apiv2][query] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:28:42.099Z] <<< [apiv2][status] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key 404
+[debug] [2023-01-12T04:28:42.099Z] <<< [apiv2][body] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:28:42.840Z] >>> [apiv2][query] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:28:43.192Z] <<< [apiv2][status] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key 404
+[debug] [2023-01-12T04:28:43.192Z] <<< [apiv2][body] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:28:43.209Z] >>> [apiv2][query] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:28:43.487Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:28:43.567Z] <<< [apiv2][status] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key 404
+[debug] [2023-01-12T04:28:43.568Z] <<< [apiv2][body] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:28:43.720Z] >>> [apiv2][query] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:28:43.823Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:28:43.823Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:28:43.927Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:28:44.075Z] <<< [apiv2][status] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key 404
+[debug] [2023-01-12T04:28:44.075Z] <<< [apiv2][body] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:28:44.106Z] >>> [apiv2][query] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:28:44.224Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:28:44.254Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:28:44.254Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:28:44.444Z] <<< [apiv2][status] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key 404
+[debug] [2023-01-12T04:28:44.445Z] <<< [apiv2][body] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:28:44.467Z] >>> [apiv2][query] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:28:44.558Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:28:44.559Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:28:44.656Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:28:44.807Z] <<< [apiv2][status] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key 404
+[debug] [2023-01-12T04:28:44.807Z] <<< [apiv2][body] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:28:44.845Z] >>> [apiv2][query] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:28:44.993Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:28:44.993Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:28:45.038Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:28:45.206Z] <<< [apiv2][status] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key 404
+[debug] [2023-01-12T04:28:45.206Z] <<< [apiv2][body] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:28:45.217Z] >>> [apiv2][query] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:28:45.376Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:28:45.376Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:28:45.412Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:28:45.582Z] <<< [apiv2][status] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key 404
+[debug] [2023-01-12T04:28:45.582Z] <<< [apiv2][body] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:28:45.588Z] >>> [apiv2][query] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:28:45.755Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:28:45.755Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:28:45.774Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:28:45.944Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:28:45.950Z] <<< [apiv2][status] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key 404
+[debug] [2023-01-12T04:28:45.950Z] <<< [apiv2][body] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:28:46.123Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:28:46.123Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:28:46.128Z] >>> [apiv2][query] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:28:46.287Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:28:46.287Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:28:46.348Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:28:46.474Z] <<< [apiv2][status] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key 404
+[debug] [2023-01-12T04:28:46.475Z] <<< [apiv2][body] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:28:46.605Z] >>> [apiv2][query] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:28:46.711Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:28:46.711Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:28:46.832Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:28:46.958Z] <<< [apiv2][status] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key 404
+[debug] [2023-01-12T04:28:46.958Z] <<< [apiv2][body] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:28:47.037Z] >>> [apiv2][query] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:28:47.146Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:28:47.146Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:28:47.230Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:28:47.387Z] <<< [apiv2][status] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key 404
+[debug] [2023-01-12T04:28:47.387Z] <<< [apiv2][body] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:28:47.416Z] >>> [apiv2][query] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:28:47.563Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:28:47.563Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:28:47.608Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:28:47.760Z] <<< [apiv2][status] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key 404
+[debug] [2023-01-12T04:28:47.760Z] <<< [apiv2][body] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:28:47.808Z] >>> [apiv2][query] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:28:47.938Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:28:47.938Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:28:48.148Z] <<< [apiv2][status] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key 404
+[debug] [2023-01-12T04:28:48.148Z] <<< [apiv2][body] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:28:48.427Z] >>> [apiv2][query] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:28:48.621Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:28:48.771Z] <<< [apiv2][status] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key 404
+[debug] [2023-01-12T04:28:48.772Z] <<< [apiv2][body] GET https://api.github.com/repos/dx21x/bbtt/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:28:48.937Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:28:48.938Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:29:01.759Z] >>> [apiv2][query] GET https://api.github.com/repos/motasem/bbtt/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:29:02.142Z] <<< [apiv2][status] GET https://api.github.com/repos/motasem/bbtt/actions/secrets/public-key 404
+[debug] [2023-01-12T04:29:02.142Z] <<< [apiv2][body] GET https://api.github.com/repos/motasem/bbtt/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:29:02.445Z] >>> [apiv2][query] GET https://api.github.com/repos/motasem/bbtt/actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:29:02.677Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-01-12T04:29:02.801Z] <<< [apiv2][status] GET https://api.github.com/repos/motasem/bbtt/actions/secrets/public-key 404
+[debug] [2023-01-12T04:29:02.801Z] <<< [apiv2][body] GET https://api.github.com/repos/motasem/bbtt/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-01-12T04:29:03.004Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-01-12T04:29:03.004Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-12T04:29:18.254Z] ----------------------------------------------------------------------
+[debug] [2023-01-12T04:29:18.257Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ACER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-01-12T04:29:18.258Z] CLI Version:   11.20.0
+[debug] [2023-01-12T04:29:18.258Z] Platform:      win32
+[debug] [2023-01-12T04:29:18.258Z] Node Version:  v18.13.0
+[debug] [2023-01-12T04:29:18.259Z] Time:          Thu Jan 12 2023 07:29:18 GMT+0300 (GMT+03:00)
+[debug] [2023-01-12T04:29:18.260Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-12T04:29:18.272Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-12T04:29:18.273Z] > authorizing via signed-in user (mutasem.990@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\ACER\Desktop\motasem\fullapp\motasem\bbtt (1)\bbtt
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-01-12T04:29:23.096Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-01-12T04:29:23.801Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-01-12T04:29:23.801Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project mykalori-app (mykalori app) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2023-01-12T04:29:25.600Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-01-12T04:29:25.601Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/mykalori-app
+[debug] [2023-01-12T04:29:26.817Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/firebasedatabase.googleapis.com 200
+[debug] [2023-01-12T04:29:26.818Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2023-01-12T04:29:26.820Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/mykalori-app/locations/-/instances/mykalori-app-default-rtdb [none]
+[debug] [2023-01-12T04:29:27.312Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/mykalori-app/locations/-/instances/mykalori-app-default-rtdb 200
+[debug] [2023-01-12T04:29:27.313Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/mykalori-app/locations/-/instances/mykalori-app-default-rtdb {"name":"projects/416271199834/locations/asia-southeast1/instances/mykalori-app-default-rtdb","project":"projects/416271199834","databaseUrl":"https://mykalori-app-default-rtdb.asia-southeast1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2023-01-12T04:29:30.865Z] >>> [apiv2][query] GET https://mykalori-app-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [none]
+[debug] [2023-01-12T04:29:31.733Z] <<< [apiv2][status] GET https://mykalori-app-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json 200
+[debug] [2023-01-12T04:29:31.734Z] <<< [apiv2][body] GET https://mykalori-app-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [stream]
+[info] +  Database Rules for mykalori-app-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2023-01-12T04:29:31.741Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/firestore.googleapis.com [none]
+[debug] [2023-01-12T04:29:31.741Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/firestore.googleapis.com x-goog-quota-user=projects/mykalori-app
+[debug] [2023-01-12T04:29:32.934Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/firestore.googleapis.com 200
+[debug] [2023-01-12T04:29:32.934Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/firestore.googleapis.com [omitted]
+[debug] [2023-01-12T04:29:32.935Z] >>> [apiv2][query] GET https://appengine.googleapis.com/v1/apps/mykalori-app [none]
+[debug] [2023-01-12T04:29:33.739Z] <<< [apiv2][status] GET https://appengine.googleapis.com/v1/apps/mykalori-app 200
+[debug] [2023-01-12T04:29:33.739Z] <<< [apiv2][body] GET https://appengine.googleapis.com/v1/apps/mykalori-app {"name":"apps/mykalori-app","id":"mykalori-app","authDomain":"gmail.com","locationId":"asia-southeast1","codeBucket":"staging.mykalori-app.appspot.com","servingStatus":"SERVING","defaultHostname":"mykalori-app.as.r.appspot.com","defaultBucket":"mykalori-app.appspot.com","serviceAccount":"mykalori-app@appspot.gserviceaccount.com","gcrDomain":"asia.gcr.io","databaseType":"CLOUD_FIRESTORE","featureSettings":{"splitHealthChecks":true,"useContainerOptimizedOs":true}}
+[debug] [2023-01-12T04:29:33.740Z] database_type: CLOUD_FIRESTORE
+[debug] [2023-01-12T04:29:33.740Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-12T04:29:33.741Z] > authorizing via signed-in user (mutasem.990@gmail.com)
+[debug] [2023-01-12T04:29:33.741Z] [iam] checking project mykalori-app for permissions ["firebase.projects.get"]
+[debug] [2023-01-12T04:29:33.742Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/mykalori-app:testIamPermissions [none]
+[debug] [2023-01-12T04:29:33.742Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/mykalori-app:testIamPermissions x-goog-quota-user=projects/mykalori-app
+[debug] [2023-01-12T04:29:33.742Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mykalori-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-01-12T04:29:34.745Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/mykalori-app:testIamPermissions 200
+[debug] [2023-01-12T04:29:34.745Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mykalori-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-01-12T04:29:37.151Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/mykalori-app/releases pageSize=10&pageToken=
+[debug] [2023-01-12T04:29:37.609Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/mykalori-app/releases 200
+[debug] [2023-01-12T04:29:37.609Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/mykalori-app/releases {"releases":[{"name":"projects/mykalori-app/releases/cloud.firestore","rulesetName":"projects/mykalori-app/rulesets/87f9fb9a-e0fc-4fef-970c-b7e8fb8a6222","createTime":"2023-01-12T03:49:34.649469Z","updateTime":"2023-01-12T03:49:34.649469Z"},{"name":"projects/mykalori-app/releases/firebase.storage/mykalori-app.appspot.com","rulesetName":"projects/mykalori-app/rulesets/01b4d7fc-4924-46b3-8786-ae9f2914cf99","createTime":"2023-01-12T04:12:26.564626Z","updateTime":"2023-01-12T04:12:26.564626Z"}]}
+[debug] [2023-01-12T04:29:37.609Z] Found ruleset: projects/mykalori-app/rulesets/87f9fb9a-e0fc-4fef-970c-b7e8fb8a6222
+[debug] [2023-01-12T04:29:37.610Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/mykalori-app/rulesets/87f9fb9a-e0fc-4fef-970c-b7e8fb8a6222 [none]
+[debug] [2023-01-12T04:29:38.473Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/mykalori-app/rulesets/87f9fb9a-e0fc-4fef-970c-b7e8fb8a6222 200
+[debug] [2023-01-12T04:29:38.473Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/mykalori-app/rulesets/87f9fb9a-e0fc-4fef-970c-b7e8fb8a6222 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-01-12T04:29:44.901Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/mykalori-app/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2023-01-12T04:29:44.902Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/mykalori-app/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2023-01-12T04:29:47.169Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/mykalori-app/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2023-01-12T04:29:47.169Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/mykalori-app/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/mykalori-app/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[debug] [2023-01-12T04:29:47.186Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/mykalori-app/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2023-01-12T04:29:47.186Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/mykalori-app/databases/(default)/collectionGroups/-/indexes {}
+[info] 
+=== Functions Setup
+[debug] [2023-01-12T04:29:47.189Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-12T04:29:47.189Z] > authorizing via signed-in user (mutasem.990@gmail.com)
+[debug] [2023-01-12T04:29:47.189Z] [iam] checking project mykalori-app for permissions ["firebase.projects.get"]
+[debug] [2023-01-12T04:29:47.189Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/mykalori-app:testIamPermissions [none]
+[debug] [2023-01-12T04:29:47.189Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/mykalori-app:testIamPermissions x-goog-quota-user=projects/mykalori-app
+[debug] [2023-01-12T04:29:47.189Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mykalori-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-01-12T04:29:48.186Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/mykalori-app:testIamPermissions 200
+[debug] [2023-01-12T04:29:48.186Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mykalori-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-01-12T04:29:48.188Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-01-12T04:29:48.188Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/mykalori-app
+[debug] [2023-01-12T04:29:48.191Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-01-12T04:29:48.192Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/mykalori-app
+[debug] [2023-01-12T04:29:49.264Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/cloudfunctions.googleapis.com 200
+[debug] [2023-01-12T04:29:49.264Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2023-01-12T04:29:49.309Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/runtimeconfig.googleapis.com 200
+[debug] [2023-01-12T04:29:49.309Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/mykalori-app/services/runtimeconfig.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default
+
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote 20290197_app/package.json 
+[info] +  Wrote 20290197_app/.eslintrc.js 
+[info] +  Wrote 20290197_app/index.js 
+[info] +  Wrote 20290197_app/.gitignore 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-01-12T04:30:38.586Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-01-12T04:30:38.741Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-01-12T04:30:38.741Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.15.0","browserURL":"https://www.gstatic.com/firebasejs/9.15.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.15.0/firebase.tgz"},"live":{"version":"9.15","browserURL":"https://www.gstatic.com/firebasejs/live/9.15/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.15/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.15.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.15.0/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.15.0/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.15.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.15.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.15.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.15.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.15.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.15.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.15.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+=== Storage Setup
+[info] 
+[info] Firebase Storage Security Rules allow you to define how and when to allow
+[info] uploads and downloads. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[info] +  Wrote storage.rules 
+[info] 
+=== Emulators Setup
+[info] i  firestore: downloading cloud-firestore-emulator-v1.15.1.jar... {"metadata":{"emulator":{"name":"firestore"},"message":"downloading cloud-firestore-emulator-v1.15.1.jar..."}}
+[debug] [2023-01-12T04:31:23.975Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.15.1.jar 
+[debug] [2023-01-12T04:31:24.365Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.15.1.jar 200
+[debug] [2023-01-12T04:31:24.365Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.15.1.jar [stream]
+[info] i  database: downloading firebase-database-emulator-v4.11.0.jar... {"metadata":{"emulator":{"name":"database"},"message":"downloading firebase-database-emulator-v4.11.0.jar..."}}
+[debug] [2023-01-12T04:31:44.877Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/firebase-database-emulator-v4.11.0.jar 
+[debug] [2023-01-12T04:31:45.236Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/firebase-database-emulator-v4.11.0.jar 200
+[debug] [2023-01-12T04:31:45.237Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/firebase-database-emulator-v4.11.0.jar [stream]
+[info] i  pubsub: downloading pubsub-emulator-0.7.1.zip... {"metadata":{"emulator":{"name":"pubsub"},"message":"downloading pubsub-emulator-0.7.1.zip..."}}
+[debug] [2023-01-12T04:31:57.541Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/pubsub-emulator-0.7.1.zip 
+[debug] [2023-01-12T04:31:58.061Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/pubsub-emulator-0.7.1.zip 200
+[debug] [2023-01-12T04:31:58.061Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/pubsub-emulator-0.7.1.zip [stream]
+[info] i  storage: downloading cloud-storage-rules-runtime-v1.1.2.jar... {"metadata":{"emulator":{"name":"storage"},"message":"downloading cloud-storage-rules-runtime-v1.1.2.jar..."}}
+[debug] [2023-01-12T04:32:19.441Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-storage-rules-runtime-v1.1.2.jar 
+[debug] [2023-01-12T04:32:19.788Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-storage-rules-runtime-v1.1.2.jar 200
+[debug] [2023-01-12T04:32:19.788Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-storage-rules-runtime-v1.1.2.jar [stream]
+[info] i  ui: downloading ui-v1.11.2.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.11.2.zip..."}}
+[debug] [2023-01-12T04:32:34.766Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.2.zip 
+[info] 
+=== Remoteconfig Setup
+[debug] [2023-01-12T04:32:35.074Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.2.zip 200
+[debug] [2023-01-12T04:32:35.074Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.2.zip [stream]
+[info] 
+[info] i  Writing configuration info to firebase.json... 
+[info] i  Writing project information to .firebaserc... 
+[info] 
+[info] +  Firebase initialization complete! 
